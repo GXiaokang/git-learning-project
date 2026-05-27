@@ -215,14 +215,28 @@ git remote -v
 git remote add origin 远程仓库地址
 ```
 
-### 5. 推送到远程
+### 5. 重命名主分支（GitHub 默认使用 main）
 ```bash
-git push origin 分支名
+git branch -M main
 ```
 
-### 6. 从远程拉取
+### 6. 推送到远程仓库
 ```bash
-git pull origin 分支名
+# 首次推送（设置上游分支）
+git push -u origin main
+
+# 后续推送
+git push origin main
+```
+
+### 7. 从远程拉取最新代码
+```bash
+git pull origin main
+```
+
+### 8. 克隆远程仓库到本地
+```bash
+git clone 远程仓库地址
 ```
 
 ---
@@ -237,7 +251,46 @@ git pull origin 分支名
 
 ---
 
-## 七、在本项目中的实践
+## 七、GitHub 远程仓库完整操作流程
+
+### 准备工作
+1. 在 GitHub 上注册账号
+2. 创建新的远程仓库（不要添加任何文件）
+
+### 完整步骤
+
+#### 1. 连接本地仓库与远程仓库
+```bash
+# 查看当前远程仓库
+git remote -v
+
+# 添加远程仓库
+git remote add origin https://github.com/用户名/仓库名.git
+```
+
+#### 2. 重命名主分支（GitHub 推荐使用 main）
+```bash
+git branch -M main
+```
+
+#### 3. 推送到远程仓库
+```bash
+# 首次推送（设置上游分支）
+git push -u origin main
+```
+
+#### 4. 后续同步操作
+```bash
+# 拉取远程最新代码
+git pull origin main
+
+# 推送本地提交
+git push origin main
+```
+
+---
+
+## 八、在本项目中的实践
 
 我们在这个项目中已经演示了：
 - ✅ Git 初始化与配置
@@ -245,5 +298,8 @@ git pull origin 分支名
 - ✅ 分支创建与切换
 - ✅ 分支合并与冲突解决
 - ✅ 修改最后一次提交
+- ✅ **连接并推送到 GitHub 远程仓库**（最新完成！）
+
+本项目已成功推送到：https://github.com/GXiaokang/git-learning-project.git
 
 你可以继续在这个项目中尝试其他 Git 命令来加深理解！

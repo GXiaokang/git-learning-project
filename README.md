@@ -14,3 +14,7 @@
 - 分支操作与合并
 - 解决合并冲突
 - 撤销与修改提交
+- GitHub 远程仓库操作
+
+## 📍 项目地址
+本项目已托管在 GitHub：https://github.com/GXiaokang/git-learning-project.git

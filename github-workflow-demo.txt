@@ -1,0 +1,21 @@
+
+GitHub Workflow Demo
+====================
+
+This file demonstrates the Git workflow with GitHub.
+
+Steps we've completed:
+1. Created local Git repository
+2. Added files and made commits
+3. Created and merged branches
+4. Resolved merge conflicts
+5. Connected to GitHub remote repository
+6. Pushed code to GitHub
+
+Current remote: https://github.com/GXiaokang/git-learning-project.git
+
+Next time you make changes:
+1. Edit files
+2. git add .
+3. git commit -m "your message"
+4. git push origin main
